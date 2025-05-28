@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Calmpuchia</string>
+    <string name="title_product_categories">Product Categories</string>
+    <string name="title_home_decor">Home Decor</string>
+    <string name="title_kitchenware">Kitchenware</string>
+    <string name="title_bedding_and_bath"><![CDATA[Bedding & Bath]]></string>
+    <string name="title_electronics">Electronics</string>
+    <string name="title_product_list">Product List</string>
+    <string name="title_product_list_homedecor">Home Decor</string>
+    <string name="title_homedecor_clock">3D Wozoom wall clock</string>
+    <string name="title_homedecor_vertical_glass_vase">Vertical glass vase</string>
+    <string name="title_plus">+</string>
+    <string name="title_minus">-</string>
+</resources>

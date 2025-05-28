@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <!-- Địa chỉ giao hàng -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="#FF6750a4"
+            android:gravity="center_vertical">
+
+            <!-- Nút Back -->
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/ic_back"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:contentDescription="Back" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_customer" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="8dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Customer A - 123XXXXXX"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Block C, District 4, Threads City"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Danh sách sản phẩm -->
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Sản phẩm 1 -->
+            <TextView
+                android:text="Shop DAE"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/ic_productA" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Product A"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="₫100.000"
+                        android:textStyle="bold"
+                        android:textColor="#FF5722"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnMinus"
+                        android:layout_weight="1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/ic_minus"
+                        android:contentDescription="Minus" />
+
+                    <TextView
+                        android:id="@+id/quantity_text"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:id="@+id/btnPlus"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/ic_plus"
+                        android:contentDescription="Plus" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Sản phẩm 2 -->
+            <TextView
+                android:text="Shop ABC"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/ic_productD" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Product D"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="₫99.000"
+                        android:textStyle="bold"
+                        android:textColor="#FF5722"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnMinus"
+                        android:layout_weight="1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/ic_minus"
+                        android:contentDescription="Minus" />
+
+                    <TextView
+                        android:id="@+id/quantity_text"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:id="@+id/btnPlus"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/ic_plus"
+                        android:contentDescription="Plus" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Phí vận chuyển -->
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F6F6F6"
+            android:padding="12dp">
+
+            <TextView
+                android:text="Shipping Method: Express"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Guaranteed delivery from May 28 - May 30"
+                android:textSize="14sp"
+                android:textColor="#4CAF50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Voucher & Xu -->
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Dòng 1: Voucher -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:text="Voucher"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Free Shipping"
+                    android:textSize="14sp"
+                    android:gravity="end"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Dòng 2: Shopee Xu -->
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:text="Coins"
+                    android:textSize="14sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <Switch
+                    android:text="Use 500 🪙"
+                    android:textSize="14sp"
+                    android:gravity="end"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- Phương thức thanh toán -->
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Payment method"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    android:id="@+id/rbCalmpuchiaPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CalmpuchiaPay (123****)" />
+
+                <RadioButton
+                    android:id="@+id/rbCOD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cash on Delivery (COD)" />
+
+                <RadioButton
+                    android:id="@+id/rbCreditCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Credit/Debit Card" />
+
+                <RadioButton
+                    android:id="@+id/rbBankTransfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Transfer" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <!-- Chi tiết thanh toán -->
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F6F6F6"
+            android:padding="12dp">
+
+            <TextView
+                android:text="Payment Details"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Order Total: ₫199.000"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Shipping Fee: ₫32.800"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Shipping Discount: -₫32.800"
+                android:textSize="14sp"
+                android:textColor="#4CAF50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Total: ₫199.000"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#FF5722"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Nút đặt hàng -->
+        <Button
+            android:id="@+id/btnOrderNow"
+            android:layout_marginTop="24dp"
+            android:text="Order now - ₫199.000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ff6750a4"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>
